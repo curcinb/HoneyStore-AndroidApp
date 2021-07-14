@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pocetnaItem"
+        android:title="Poćetna"></item>
+    <item
+        android:id="@+id/korpaItem"
+        android:title="Moja korpa"></item>
+    <item
+        android:id="@+id/profilItem"
+        android:title="Moj profil" />
+    <item
+        android:id="@+id/odjavaItem"
+        android:title="Odjava" />
+</menu>

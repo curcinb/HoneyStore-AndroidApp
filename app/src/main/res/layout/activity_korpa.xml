@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KorpaActivity"
+    android:background="@color/orange">
+
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moja korpa"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <EditText
+        android:id="@+id/brojTelefona"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Broj telefona"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adresa"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TableLayout
+        android:id="@+id/tabelaKorpa"
+        android:layout_width="340dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naslov"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/obrisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isprazni korpu"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabelaKorpa"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="isprazniKorpu"/>
+
+    <TextView
+        android:id="@+id/cenaTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ukupna cena:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obrisi"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/cenaSvega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="cenaSvega"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cenaTekst"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/imePrezime"
+        android:layout_width="305dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Ime i prezime"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cenaSvega"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <EditText
+        android:id="@+id/adresa"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Adresa"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imePrezime"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/naruci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naruci"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brojTelefona"
+        app:layout_constraintVertical_bias="0.243"
+        android:onClick="izvrsiPorudzbinu"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
